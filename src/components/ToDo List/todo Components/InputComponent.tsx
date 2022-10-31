@@ -2,32 +2,39 @@ import { keyboardKey } from "@testing-library/user-event";
 import React from "react";
 import "./inputComponent.css";
 import { useState } from "react";
+import { taskObject } from "../Todolist";
 
-function InputComponent() {
+type propsType = {
+  todoStateUpdater: (newTaskObj: taskObject) => void;
+};
+
+function InputComponent(props: propsType) {
   const [msg, setMsg] = useState("");
 
   const handleChange = (event: any) => {
     setMsg(event.target.value);
   };
 
+  let newTaskObject: taskObject;
+
   const checkKeyDown = (event: keyboardKey, textContent: string) => {
     if (event.key === "Enter") {
       // console.log(event);
       if (textContent) {
-        const name = textContent;
-        actOnClickOrOnEnter(event, name);
+        // const name = textContent;
+        actOnClickOrOnEnter(textContent);
       } else {
         alert("Enter something first...");
       }
     }
   };
 
-  const actOnClickOrOnEnter = (event: keyboardKey, name: string) => {
+  const actOnClickOrOnEnter = (name: string) => {
+    const randId: Number = Date.now();
     if (name) {
-      // props.updateState({
-      //   id: randomID,
-      //   taskName: name,
-      //   taskStatus: "New",});
+      newTaskObject = { id: randId, title: name, status: "New" };
+      // console.log(newTaskObject);
+      props.todoStateUpdater(newTaskObject);
       setMsg("");
     } else alert("Enter something first...");
   };

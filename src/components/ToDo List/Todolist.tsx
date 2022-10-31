@@ -1,26 +1,47 @@
 import React, { useState } from "react";
 import "./todolist.css";
 import InputComponent from "./todo Components/InputComponent";
+import TodolistDisplay from "./todo Components/TodolistDisplay";
 
-interface taskObject {
-  id: number;
+export interface taskObject {
+  id: Number;
   title: string;
-  isComplete: boolean;
+  status: string;
 }
 
-const taskArray: Array<taskObject> = [];
+// let newTaskObject: taskObject;
+
+const taskArray: {}[] = [];
 
 function TodoList() {
   const [todo, setTodo] = useState(taskArray);
 
-  //   const updateState = (newTaskObj: taskObject) => {
-  //     setTodo(newTaskObj);
-  //     taskArray.push(newTaskObj);
-  //   };
+  const updateTodoState = (newTaskObj: taskObject) => {
+    taskArray.push(newTaskObj);
+    setTodo([...taskArray]);
+    // console.log(taskArray);
+  };
+
+  // const onMarkDone = (indexId, event) => {
+  //   const affirm = window.confirm("Confirm task completion.");
+  //   if (affirm) {
+  //     taskObj[indexId]["taskStatus"] = "Completed";
+  //     console.clear();
+  //     setTask([taskObj]);
+  //     event.currentTarget.disabled = true;
+  //   }
+  // };
+
+  // const deleteTask = (indexId) => {
+  //   delete taskObj[indexId];
+  //   setTodo([...taskArray]);
+  //   // console.log(taskObj);
+  // };
 
   return (
     <div className="todosComponent">
-      <InputComponent />
+      <InputComponent todoStateUpdater={updateTodoState} />
+      <TodolistDisplay taskArray={taskArray} />
     </div>
   );
 }

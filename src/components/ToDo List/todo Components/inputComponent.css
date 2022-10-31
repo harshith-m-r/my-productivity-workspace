@@ -17,6 +17,8 @@
   border: none;
   border-radius: 10px 10px;
   padding-left: 10px;
+  position: static;
+  /* overflow-y: ; */
 }
 
 /* .addTaskBtn {

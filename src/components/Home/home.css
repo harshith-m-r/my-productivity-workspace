@@ -193,3 +193,72 @@
 .fa {
   color: white;
 }
+
+.popup-content {
+  margin-top: -150px;
+  margin-left: 370px;
+  background: rgb(213, 255, 245);
+  width: 500px;
+  /* padding: 5px; */
+  border-radius: 10px;
+}
+.popup-arrow {
+  color: rgb(200, 255, 252);
+}
+[role="tooltip"].popup-content {
+  width: 638px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+}
+
+.popup-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+[data-popup="tooltip"].popup-overlay {
+  background: transparent;
+}
+
+.notesPopup-content {
+  margin-top: -222px;
+  margin-left: 370px;
+  background: rgb(213, 255, 245);
+  width: 500px;
+  /* padding: 5px; */
+  border-radius: 10px;
+}
+.notesPopup-arrow {
+  color: rgb(200, 255, 252);
+}
+[role="tooltip"].notesPopup-content {
+  width: 638px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+}
+
+.notesPopup-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+[data-popup="tooltip"].notesPopup-overlay {
+  background: transparent;
+}
+
+.aboutMe-content {
+  margin-top: -295px;
+  margin-left: 370px;
+  background: rgb(213, 255, 245);
+  width: 200px;
+  /* padding: 5px; */
+  border-radius: 10px;
+}
+.aboutMe-arrow {
+  color: rgb(200, 255, 252);
+}
+[role="tooltip"].aboutMe-content {
+  width: 638px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+}
+
+.aboutMe-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+[data-popup="tooltip"].aboutMe-overlay {
+  background: transparent;
+}

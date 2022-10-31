@@ -1,11 +1,12 @@
 .todosComponent {
-  width: 50%;
-  max-width: 50%;
+  width: 651px;
+  /* max-width: 100%; */
   height: 620px;
   max-height: 620px;
   border: 1px solid white;
   border-radius: 10px;
-  margin-left: 120px;
+  margin-top: -20px;
+  /* margin-left: 120px; */
   background-color: #fee0c4;
   overflow-y: scroll;
 }

@@ -20,7 +20,13 @@ function TechNewsArea() {
 
   const newsItems = newsArr;
   const newsList = newsItems.slice(0, 4).map((newsItem: any, index: number) => {
-    return <NewsItemCard newsItemName={newsItem.title} link={newsItem.link} />;
+    return (
+      <NewsItemCard
+        key={index}
+        newsItemName={newsItem.title}
+        link={newsItem.link}
+      />
+    );
   });
 
   return (

@@ -7,4 +7,5 @@
   border-radius: 10px;
   margin-left: 120px;
   background-color: #fee0c4;
+  overflow-y: scroll;
 }

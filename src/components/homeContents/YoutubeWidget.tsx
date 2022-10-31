@@ -13,7 +13,7 @@ function WeatherWidget() {
           src="https://www.youtube.com/embed/videoseries?list=OLAK5uy_kgR3fKD6TVQlr8TiN1XYCY8QNdm_8cvLk"
           title="YouTube video player"
           //   frameborder="1px"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
           //   allowfullscreen
         ></iframe>
       </div>

@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+.homeGrid {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 10px;
+  background-color: rgb(217, 217, 217);
+  padding: 10px;
+  width: 98.6%;
+  height: 900px;
+  max-height: fit-content;
+
+  grid-template-rows: 80px 200px 200px 200px 163px;
+  grid-template-columns: 90px 22.7% 22.7% 22.7% 22.7% 22.7%;
+}
+
+.homeGrid > div {
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.header {
+  grid-column-start: 1;
+  grid-column-end: 6;
+}
+
+.title {
+  font-size: xx-large;
+  font-family: "Pacifico", cursive;
+  float: left;
+  margin-left: 5px;
+}
+
+.userProfile {
+  font-size: medium;
+  font-family: "Acme", sans-serif;
+  float: right;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.navbar {
+  grid-row-start: 2;
+  grid-row-end: 5;
+}
+
+.tasksBoard {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.notesBoard {
+  grid-column-start: 4;
+  grid-column-end: 6;
+}
+
+.techNews {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+
+.youtubeWidget {
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+
+/* .weatherWidget {
+  background-image: url("https://media.istockphoto.com/vectors/blue-sky-and-clouds-seamless-vector-background-vector-id1163292935?k=20&m=1163292935&s=170667a&w=0&h=NVDST_T-VlT6oNU2i5cckoIF0JXpgD68by0OS3MPbY8=");
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.musicWidget {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+.quoteWidget {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 4;
+  grid-row-end: 5;
+} */
+
+.footer {
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/644/305/118/pattern-black-gradient-texture-wallpaper-preview.jpg");
+  grid-column-start: 1;
+  grid-column-end: 6;
+}
+
+.navbar a {
+  /* margin-top: 10p; */
+  display: block;
+  color: black;
+  padding: 10px 10px;
+  text-decoration: none;
+  border-radius: 10px;
+  /* border: none; */
+}
+
+/* .navbar a.active {
+  background-color: #e8ae51;
+  color: white;
+} */
+
+.navbar a:hover:not(.active) {
+  /* background-color: #555; */
+  scale: 1.5;
+  color: white;
+}
+
+.homeIcon {
+  margin-top: 3px;
+  width: 30px;
+  height: 30px;
+}
+
+.todoIcon {
+  margin-top: 3px;
+  width: 30px;
+  height: 30px;
+}
+
+.noteIcon {
+  margin-top: 3px;
+  width: 30px;
+  height: 30px;
+}
+
+.aboutIcon {
+  margin-top: 3px;
+  width: 30px;
+  height: 30px;
+}
+
+.homeBtn,
+.todoBtn,
+.notesBtn,
+.aboutBtn {
+  margin-top: 10px;
+  background-color: aliceblue;
+  border-radius: 10px;
+  margin-right: 4px;
+  border: none;
+}
+
+.footerTitle {
+  color: white;
+  font-family: "Pacifico", cursive;
+  margin-top: -20px;
+  font-size: 36px;
+  /* text-shadow: 2px 2px #95dcdd; */
+}
+
+.footerDesg {
+  color: white;
+  font-family: "Acme", sans-serif;
+  font-size: 18px;
+  margin-top: -30px;
+}
+
+.socials {
+  color: white;
+  margin-top: -10px;
+  margin-left: -50px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-bottom,
+.footerBottomLink {
+  color: white;
+  font-size: small;
+  margin-top: -30px;
+}
+
+.fa {
+  color: white;
+}

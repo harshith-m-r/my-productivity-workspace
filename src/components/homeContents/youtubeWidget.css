@@ -1,0 +1,12 @@
+.weatherWidgetLabel {
+  background-color: rgb(174, 124, 124);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 10px 10px 0 0;
+  margin-top: -20px;
+}
+
+.youtubeEmbed {
+  border-radius: 0px 0px 10px 10px;
+}

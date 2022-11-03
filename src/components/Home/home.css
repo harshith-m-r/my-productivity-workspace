@@ -10,7 +10,7 @@
   padding: 10px;
   width: 98.6%;
   height: 900px;
-  max-height: fit-content;
+  /* max-height: fit-content; */
 
   grid-template-rows: 80px 200px 200px 200px 163px;
   grid-template-columns: 90px 22.7% 22.7% 22.7% 22.7% 22.7%;
@@ -73,27 +73,6 @@
   grid-row-end: 5;
 }
 
-/* .weatherWidget {
-  background-image: url("https://media.istockphoto.com/vectors/blue-sky-and-clouds-seamless-vector-background-vector-id1163292935?k=20&m=1163292935&s=170667a&w=0&h=NVDST_T-VlT6oNU2i5cckoIF0JXpgD68by0OS3MPbY8=");
-  grid-column-start: 5;
-  grid-column-end: 6;
-  grid-row-start: 3;
-  grid-row-end: 4;
-}
-
-.musicWidget {
-  grid-column-start: 4;
-  grid-column-end: 5;
-  grid-row-start: 4;
-  grid-row-end: 5;
-}
-
-.quoteWidget {
-  grid-column-start: 5;
-  grid-column-end: 6;
-  grid-row-start: 4;
-  grid-row-end: 5;
-} */
 
 .footer {
   background-image: url("https://c4.wallpaperflare.com/wallpaper/644/305/118/pattern-black-gradient-texture-wallpaper-preview.jpg");
@@ -101,66 +80,12 @@
   grid-column-end: 6;
 }
 
-.navbar a {
-  /* margin-top: 10p; */
-  display: block;
-  color: black;
-  padding: 10px 10px;
-  text-decoration: none;
-  border-radius: 10px;
-  /* border: none; */
-}
 
-/* .navbar a.active {
-  background-color: #e8ae51;
-  color: white;
-} */
-
-.navbar a:hover:not(.active) {
-  /* background-color: #555; */
-  scale: 1.5;
-  color: white;
-}
-
-.homeIcon {
-  margin-top: 3px;
-  width: 30px;
-  height: 30px;
-}
-
-.todoIcon {
-  margin-top: 3px;
-  width: 30px;
-  height: 30px;
-}
-
-.noteIcon {
-  margin-top: 3px;
-  width: 30px;
-  height: 30px;
-}
-
-.aboutIcon {
-  margin-top: 3px;
-  width: 30px;
-  height: 30px;
-}
-
-.homeBtn,
-.todoBtn,
-.notesBtn,
-.aboutBtn {
-  margin-top: 10px;
-  background-color: aliceblue;
-  border-radius: 10px;
-  margin-right: 4px;
-  border: none;
-}
 
 .footerTitle {
   color: white;
   font-family: "Pacifico", cursive;
-  margin-top: -20px;
+  margin-top: -35px;
   font-size: 36px;
   /* text-shadow: 2px 2px #95dcdd; */
 }
@@ -173,9 +98,8 @@
 }
 
 .socials {
-  color: white;
-  margin-top: -10px;
-  margin-left: -50px;
+  margin-top: 0px;
+  margin-left: -90px;
   list-style: none;
   display: flex;
   align-items: center;
@@ -191,74 +115,7 @@
 }
 
 .fa {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
-.popup-content {
-  margin-top: -150px;
-  margin-left: 370px;
-  background: rgb(213, 255, 245);
-  width: 500px;
-  /* padding: 5px; */
-  border-radius: 10px;
-}
-.popup-arrow {
-  color: rgb(200, 255, 252);
-}
-[role="tooltip"].popup-content {
-  width: 638px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
-}
 
-.popup-overlay {
-  background: rgba(0, 0, 0, 0.5);
-}
-[data-popup="tooltip"].popup-overlay {
-  background: transparent;
-}
-
-.notesPopup-content {
-  margin-top: -222px;
-  margin-left: 370px;
-  background: rgb(213, 255, 245);
-  width: 500px;
-  /* padding: 5px; */
-  border-radius: 10px;
-}
-.notesPopup-arrow {
-  color: rgb(200, 255, 252);
-}
-[role="tooltip"].notesPopup-content {
-  width: 638px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
-}
-
-.notesPopup-overlay {
-  background: rgba(0, 0, 0, 0.5);
-}
-[data-popup="tooltip"].notesPopup-overlay {
-  background: transparent;
-}
-
-.aboutMe-content {
-  margin-top: -295px;
-  margin-left: 370px;
-  background: rgb(213, 255, 245);
-  width: 200px;
-  /* padding: 5px; */
-  border-radius: 10px;
-}
-.aboutMe-arrow {
-  color: rgb(200, 255, 252);
-}
-[role="tooltip"].aboutMe-content {
-  width: 638px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
-}
-
-.aboutMe-overlay {
-  background: rgba(0, 0, 0, 0.5);
-}
-[data-popup="tooltip"].aboutMe-overlay {
-  background: transparent;
-}

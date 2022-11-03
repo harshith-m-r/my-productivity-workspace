@@ -1,12 +1,24 @@
 .todosComponent {
-  width: 651px;
+  width: 650px;
   /* max-width: 100%; */
   height: 620px;
   max-height: 620px;
   border: 1px solid white;
   border-radius: 10px;
-  margin-top: -20px;
+  margin-top: -10px;
   /* margin-left: 120px; */
   background-color: #fee0c4;
   overflow-y: scroll;
+  /* margin-left: 1px; */
+}
+
+.label{
+  margin-top: 10px;
+  margin-bottom : 10px;
+  font-size: large;
+  font-weight: 700;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  background-color: #ffa3a3;
+  color: white;
 }

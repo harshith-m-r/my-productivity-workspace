@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./todolist.css";
 import InputComponent from "./todo Components/InputComponent";
 import TodolistDisplay from "./todo Components/TodolistDisplay";
+import { Outlet } from "react-router-dom";
 
 export interface taskObject {
   id: Number;
@@ -39,10 +40,14 @@ function TodoList() {
   // };
 
   return (
+    <>
     <div className="todosComponent">
+      <div className="label">Todolist</div>
       <InputComponent todoStateUpdater={updateTodoState} />
       <TodolistDisplay taskArray={taskArray} />
     </div>
+
+    </>
   );
 }
 

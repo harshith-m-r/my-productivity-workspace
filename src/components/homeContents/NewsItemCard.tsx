@@ -1,4 +1,5 @@
 import React from "react";
+import './techNewsArea.css'
 
 type newsProps = {
   newsItemName: string;

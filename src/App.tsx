@@ -1,9 +1,9 @@
 import React from "react";
-import "./App.css";
+import "./app.css";
 import { Routes, Route } from "react-router-dom";
-import Home from "./components/Home/Home";
-import TodoList from "./components/ToDo List/Todolist";
-import AboutMe from "./components/AboutMe/AboutMe";
+import Home from './components/home/home';
+import TodoList from "./components/toDoList/todolist";
+import AboutMe from "./components/aboutMe/aboutMe";
 import PageNotFound from "./components/PageNotFound";
 
 function App() {
@@ -16,7 +16,6 @@ function App() {
         </Route>
       <Route path="*" element={<PageNotFound/>}/>
       </Routes>
-      {/* <TodoList /> */}
     </div>
   );
 }

@@ -1,12 +1,13 @@
 .todoCard {
   text-align: left;
   margin-top: 5px;
-  margin-left: 5%;
+  margin-left: 2%;
   border: 1px solid black;
-  width: 90%;
+  width: 46.7%;
   align-content: center;
   border-radius: 10px;
   background-color: #e7ffff;
+  float: left;
 }
 
 /* .markDone::after {

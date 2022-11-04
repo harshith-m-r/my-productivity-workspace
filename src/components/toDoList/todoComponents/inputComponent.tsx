@@ -2,7 +2,7 @@ import { keyboardKey } from "@testing-library/user-event";
 import React from "react";
 import "./inputComponent.css";
 import { useState } from "react";
-import { taskObject } from "../Todolist";
+import { taskObject } from "../todolist";
 
 type propsType = {
   todoStateUpdater: (newTaskObj: taskObject) => void;

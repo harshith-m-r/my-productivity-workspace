@@ -17,6 +17,7 @@ function TaskCard(props: taskData) {
         <div className="taskName">{props.taskItem.title}</div>
         <div className="id">{props.taskItem.id}</div>
         <div className="status">Status : {props.taskItem.status}</div>
+        {/* <div className="priority">Priority : </div> */}
 
         <button
           className="deleteBtn"

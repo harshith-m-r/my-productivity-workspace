@@ -1,7 +1,7 @@
 import React from "react";
 import "./techNewsArea.css";
 import { useState, useEffect } from "react";
-import NewsItemCard from "./NewsItemCard";
+import NewsItemCard from "./newsItemCard";
 
 function TechNewsArea() {
   const [newsArr, setNewsArr] = useState([]);

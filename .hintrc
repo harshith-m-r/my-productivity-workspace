@@ -10,6 +10,14 @@
       }
     ],
     "button-type": "off",
-    "compat-api/css": "off"
+    "compat-api/css": "off",
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "iframe[allow]"
+        ]
+      }
+    ]
   }
 }

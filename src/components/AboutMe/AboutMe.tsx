@@ -1,6 +1,5 @@
 import React from "react";
 import "./aboutMe.css";
-import { Outlet } from 'react-router-dom';
 
 function AboutMe() {
   return (
@@ -40,17 +39,17 @@ function AboutMe() {
         <div className="socials">
           <ul className="socials">
             <li>
-              <a href="#">
+              <a href="#" title="github">
                 <i className="fa fa-github"></i>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#" title="instagram">
                 <i className="fa fa-instagram"></i>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#" title="linkedin">
                 <i className="fa fa-linkedin-square"></i>
               </a>
             </li>

@@ -1,13 +1,11 @@
 import React from "react";
 import Popup from "reactjs-popup";
 import "./home.css";
-import RecentNotesBoard from "../homeContents/RecentNotesBoard";
-import TaskStatusBoard from "../homeContents/TaskStatusBoard";
-import TechNewsArea from "../homeContents/TechNewsArea";
-import YoutubeWidget from "../homeContents/YoutubeWidget";
-import TodoList from "../ToDo List/Todolist";
-import AboutMe from "../AboutMe/AboutMe";
-import Navbar from "../homeContents/Navbar";
+import RecentNotesBoard from "../homeContents/recentNotesBoard";
+import TaskStatusBoard from "../homeContents/taskStatusBoard";
+import TechNewsArea from "../homeContents/techNewsArea";
+import YoutubeWidget from "../homeContents/youtubeWidget";
+import Navbar from "../homeContents/navbar";
 
 function Home() {
   return (
@@ -43,17 +41,17 @@ function Home() {
           <p className="footerDesg">Developer</p>
           <ul className="socials">
             <li>
-              <a href="#" target="1">
+              <a href="#" target="1" title="github">
                 <i className="fa fa-github"></i>
               </a>
             </li>
             <li>
-              <a href="#" target="2">
+              <a href="#" target="2" title="instagram">
                 <i className="fa fa-instagram"></i>
               </a>
             </li>
             <li>
-              <a href="#" target="3">
+              <a href="#" target="3" title="linkedin">
                 <i className="fa fa-linkedin-square"></i>
               </a>
             </li>

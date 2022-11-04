@@ -1,6 +1,6 @@
 import React from "react";
-import TaskCard from "./TaskCard";
-import { taskObject } from "../Todolist";
+import TaskCard from "./taskCard";
+import { taskObject } from "../todolist";
 
 type propsType = {
   taskArray: {}[];

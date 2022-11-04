@@ -1,8 +1,8 @@
 import React from 'react'
 import Popup from 'reactjs-popup'
-import TodoList from '../ToDo List/Todolist'
-import AboutMe from '../AboutMe/AboutMe'
-import { NavLink, useNavigate } from 'react-router-dom'
+import TodoList from '../toDoList/todolist'
+import AboutMe from '../aboutMe/aboutMe'
+import { NavLink } from 'react-router-dom'
 import './navbar.css'
 
 function Navbar() {

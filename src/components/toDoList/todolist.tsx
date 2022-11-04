@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import "./todolist.css";
-import InputComponent from "./todo Components/InputComponent";
-import TodolistDisplay from "./todo Components/TodolistDisplay";
-import { Outlet } from "react-router-dom";
+import InputComponent from "./todoComponents/inputComponent";
+import TodolistDisplay from "./todoComponents/todolistDisplay";
+
 
 export interface taskObject {
   id: Number;
   title: string;
-  status: string;
+  // priority: "Low" | "Medium" | "High";
+  status: "New" | "In-progress" | "Completed";
 }
 
 // let newTaskObject: taskObject;
